@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт на Покриви - София Хидроизолация</title>
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.1.js"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript" src="~/Scripts/SiteScript.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header-pic">
+            <div class="header-text">
+                @Html.ActionLink("Ремонт на Покриви - София Хидроизолация", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>   
+            <div class="aside">
+                <div class="navbuttons" runat="server">
+                    <nav>
+                        <ul class="menu">
+                            <h5>СТРАНИЦИ</h5>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a>@Html.ActionLink("Начална страница", "Index", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")"><a>@Html.ActionLink("Контакти", "Contact", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Offers" ? "active" : "")"><a>@Html.ActionLink("Оферти", "Offers", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Price_uluci" ? "active" : "")"><a>@Html.ActionLink("Цени за улуци", "Price_uluci", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Price_konstrukcii" ? "active" : "")"><a>@Html.ActionLink("Цени за покривни конструкци", "Price_konstrukcii", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Price_hidroizolaciq" ? "active" : "")"><a>@Html.ActionLink("Цени за хидроизолация", "Price_hidroizolaciq", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Price_pokriv_keremidi" ? "active" : "")"><a>@Html.ActionLink("Цени за покрив с керемиди", "Price_pokriv_keremidi", "Home")</a></li>
+                            <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Zavursheni_obekti" ? "active" : "")"><a>@Html.ActionLink("Обекти който завършихме", "Zavursheni_obekti", "Home")</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="images-bar">
+                    <h3>ПРЕНАРЕЖДАНЕ НА КЕРЕМИДИ</h3>
+                    <img src='../../Content/img/hidroremontiblogspot1.jpg' alt="hidroremontiblogspot1"/>
+                    <h3>РЕМОНТ НА СТАР ПОКРИВ</h3>
+                    <img src='../../Content/img/kremidi_pokriv.jpg' alt="kremidi pokriv"/>
+                    <h3>РЕМОНТ НА ПОКРИВИ ХИДРОИЗОЛАЦИЯ</h3>
+                    <img src="../../Content/img/hidroizolaciq_2.jpg" alt="hidroizolaciq 2"/>
+                    <h3>МОНТАЖ НА БИТУМНИ КЕРЕМИДИ</h3>
+                    <img src="../../Content/img/bitumni_keremidi.jpg" alt="bitumni keremidi"/>
+                </div>
+            </div>
+        </div>
+        <div class="date-show-hide" runat="server">
+            <h2 class="date-header">
+                <span>НЕДЕЛЯ, 12 МАРТ 2017 Г.</span>
+            </h2>
+        </div>
+        <div class="body-content">
+            @RenderBody()
+        </div>
+        <div class="footer-link">
+            @Html.ActionLink("Начална страница", "Index", "Home", new { area = "" }, new { @class = "footer-home-link" })
+        </div>
+        <div class="abonament" style="padding-bottom: 5em">
+            <p>Абонамент за: <a href="http://hidroremonti.blogspot.com/feeds/posts/default">Публикации (Atom)</a></p>
+        </div>
+        <footer>
+            <p></p>
+            <p>Направено от Станислав Поповски</p>
+        </footer>
+    </div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+    <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3396115317-widgets.js"></script>
+    <script type='text/javascript'>
+        window['__wavt'] = 'AOuZoY7OGmyyyFwSP9tOf_JfJcYozmFh5A:1515001408149'; _WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d4004540595950310606', '//hidroremonti.blogspot.bg/', '4004540595950310606');
+        _WidgetManager._SetDataContext([{ 'name': 'blog', 'data': { 'blogId': '4004540595950310606', 'title': 'Ремонт на Покриви - София  Хидроизолация', 'url': 'http://hidroremonti.blogspot.bg/', 'canonicalUrl': 'http://hidroremonti.blogspot.com/', 'homepageUrl': 'http://hidroremonti.blogspot.bg/', 'searchUrl': 'http://hidroremonti.blogspot.bg/search', 'canonicalHomepageUrl': 'http://hidroremonti.blogspot.com/', 'blogspotFaviconUrl': 'http://hidroremonti.blogspot.bg/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'bg', 'localeUnderscoreDelimited': 'bg', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Ремонт на Покриви - София  Хидроизолация - Atom\x22 href\x3d\x22http://hidroremonti.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Ремонт на Покриви - София  Хидроизолация - RSS\x22 href\x3d\x22http://hidroremonti.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Ремонт на Покриви - София  Хидроизолация - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/4004540595950310606/posts/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '\x3clink rel\x3d\x22openid.server\x22 href\x3d\x22https://www.blogger.com/openid-server.g\x22 /\x3e\n\x3clink rel\x3d\x22openid.delegate\x22 href\x3d\x22http://hidroremonti.blogspot.com/\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/771816573-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/1b31bc7f845d8a75', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': { 'platforms': [{ 'name': 'Получаване на връзка', 'key': 'link', 'shareMessage': 'Получаване на връзка', 'target': '' }, { 'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Споделяне в/ъв Facebook', 'target': 'facebook' }, { 'name': 'Публикувайте в блога си!', 'key': 'blogThis', 'shareMessage': 'Публикувайте в блога си!', 'target': 'blog' }, { 'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Споделяне в/ъв Twitter', 'target': 'twitter' }, { 'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Споделяне в/ъв Pinterest', 'target': 'pinterest' }, { 'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Споделяне в/ъв Google+', 'target': 'googleplus' }, { 'name': 'Имейл', 'key': 'email', 'shareMessage': 'Имейл', 'target': 'email' }], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27bg\x27};\x3c/script\x3e' }, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Прочетете още', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Ремонт на Покриви - София  Хидроизолация' } }, { 'name': 'features', 'data': { 'lazy_images': 'false', 'unsupported_browser_message': 'false', 'sharing_get_link_dialog': 'true', 'sharing_native': 'false' } }, { 'name': 'messages', 'data': { 'edit': 'Редактиране', 'linkCopiedToClipboard': 'Връзката бе копирана в буферната памет!', 'ok': 'OK', 'postLink': 'Връзка към публикацията' } }, { 'name': 'template', 'data': { 'name': 'Picture Window', 'localizedName': 'Панорамен прозорец', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'shade', 'variantId': 'shade' } }, { 'name': 'view', 'data': { 'classic': { 'name': 'classic', 'url': '?view\x3dclassic' }, 'flipcard': { 'name': 'flipcard', 'url': '?view\x3dflipcard' }, 'magazine': { 'name': 'magazine', 'url': '?view\x3dmagazine' }, 'mosaic': { 'name': 'mosaic', 'url': '?view\x3dmosaic' }, 'sidebar': { 'name': 'sidebar', 'url': '?view\x3dsidebar' }, 'snapshot': { 'name': 'snapshot', 'url': '?view\x3dsnapshot' }, 'timeslide': { 'name': 'timeslide', 'url': '?view\x3dtimeslide' }, 'isMobile': false, 'title': 'Ремонт на Покриви - София  Хидроизолация', 'description': '', 'url': 'http://hidroremonti.blogspot.bg/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false } }]);
+        _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), { 'cmtInteractionsEnabled': false, 'useNgc': false }, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'sidebar-right-1', null, document.getElementById('PageList1'), { 'title': 'Страници', 'links': [{ 'isCurrentPage': true, 'href': 'http://hidroremonti.blogspot.bg/', 'title': 'Начална страница' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/globul-0894-29-27-51-e-mail.html', 'id': '859193793689520976', 'title': 'КОНТАКТИ' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/oferti.html', 'id': '5671574834540783388', 'title': 'Оферти' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/blog-page_4927.html', 'id': '4338984507738983653', 'title': 'Цени за улуци' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/blog-page_3249.html', 'id': '7551346053984824269', 'title': 'Цени за покривни конструкци' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/blog-page_4.html', 'id': '6971110736384685925', 'title': 'Цени за хидроизолация' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/blog-page_5648.html', 'id': '2650524402427503467', 'title': 'Цени  за покрив с керемиди' }, { 'isCurrentPage': false, 'href': 'http://hidroremonti.blogspot.bg/p/blog-page_17.html', 'id': '3635661499358878437', 'title': 'Обекти който завършихме' }], 'mobile': false }, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image4', 'sidebar-right-1', null, document.getElementById('Image4'), { 'resize': true }, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image3', 'sidebar-right-1', null, document.getElementById('Image3'), { 'resize': true }, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image2', 'sidebar-right-1', null, document.getElementById('Image2'), { 'resize': true }, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 'sidebar-right-1', null, document.getElementById('Image1'), { 'resize': true }, 'displayModeFull'));
+        _WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {}, 'displayModeFull'));
+    </script>
+</body>
+</html>
